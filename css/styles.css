@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-image: url("/images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* background-color: antiquewhite; */
+  min-height: 500px;
+  width: 600px;
+}
+
+h1 {
+  font-size: 35px;
+  color: white;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+input {
+  font-size: 20px;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.output {
+  background-color: white;
+  border: 1px solid black;
+}
