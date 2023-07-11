@@ -7,6 +7,9 @@
 
     <title>Allan Nandala| Todo app</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -20,7 +23,8 @@
             <div class="todo-component">
                 <div class="tasks">
                     <input type="text" placeholder="Create a new task...">
-                    <button onclick="createTask()">Add Task</button>
+                    <button onclick="createTask()"><img src="./images/plus-circle-regular-24.png"></button>
+                    <button id="delete-list-btn"><img src="./images/refresh-regular-24.png"></button>
                 </div>
             </div>
         </section>
@@ -28,6 +32,9 @@
             <ul id="task-list">
                 <!-- ss -->
             </ul>
+        </div>
+        <div>
+            <!-- <span id="delete-list-btn">refresh</span> -->
         </div>
     </main>
     <script src="./js/scripts.js"></script>
