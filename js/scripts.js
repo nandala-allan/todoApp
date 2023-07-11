@@ -1,40 +1,42 @@
-//  selecting dom elements 
-let taskInput = document.querySelector('input');
-let taskItemList = document.querySelector('#task-list');
-let btn = document.querySelector('button');
+// //  selecting dom elements
+// let taskInput = document.querySelector('input');
+// let taskList = document.querySelector('#task-list');
+// // let btn = document.querySelector('button');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// creating a neaw task 
+// // creating newtask
 
 // function createTask() {
 
 
-//     let userInput = taskInput.value.trim();
-
-//     if (userInput.length === 0) {
+//     if (taskInput.value === '') {
 //         alert("input cannot be empty");
+//     } else {
+
+//         let todoItem = document.createElement('li');
+//         todoItem.innerText = taskInput.value;
+//         taskList.appendChild(todoItem);
+//         // let editBtn = document.createElement('span');
+//         // editBtn.innerHTML = "T";
+//         // todoItem.appendChild(editBtn);
+//         let deleteBtn = document.createElement('span');
+//         deleteBtn.innerHTML = "\u00d7";
+//         todoItem.appendChild(deleteBtn);
 //     }
+//     taskInput.value = "";
 
-//     let todoListItem = document.createElement('li');
-//     todoListItem.innerText = userInput;
-
-//     return todoListItem;
 
 // }
+
+
+// taskList.addEventListener("click", function (event) {
+//     if (event.target.tagName === "LI") {
+//         event.target.classList.toggle("check")
+//     } else if (event.target.tagName === "SPAN") {
+//         event.target.parentElement.remove()
+//     }
+// }, false)
 
 // function addItem() {
 //     let newTask = createTask();
@@ -46,3 +48,4 @@ let btn = document.querySelector('button');
 // btn.addEventListener('click', function () {
 //     addItem();
 // });
+

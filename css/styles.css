@@ -74,8 +74,8 @@ input:focus {
 }
 
 ul li {
-  font-size: 18px;
-  padding: 12px 8px 12px 50px;
+  font-size: 17px;
+  padding: 12px 8px 10px 50px;
   color: hsl(236, 9%, 61%);
   list-style: none;
   border-bottom: 1px solid hsl(233, 11%, 84%);
@@ -87,13 +87,34 @@ ul li {
 ul li::before {
   content: "";
   position: absolute;
-  height: 26px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
   border: 1px solid hsl(236, 9%, 61%);
   border-radius: 50%;
-  background-image: url("/images/icon-check.svg");
+
   background-size: cover;
   background-position: center;
-  top: 12px;
+  top: 8px;
   left: 8px;
+}
+
+ul li.check {
+  text-decoration: line-through;
+  color: hsl(235, 21%, 11%);
+}
+
+ul li.check::before {
+  background-color: hsl(236, 9%, 61%);
+  background-image: url("/images/icon-check.svg");
+  background-size: contain;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: hsl(236, 9%, 61%);
 }
